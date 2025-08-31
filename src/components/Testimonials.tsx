@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ChevronLeft, ChevronRight, Star } from '@phosphor-icons/react'
+import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
 
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -127,7 +127,7 @@ const Testimonials = () => {
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 0.4 + i * 0.1 }}
                         >
-                          <Star size={24} weight="fill" className="text-yellow-400 mx-1" />
+                          <Star size={24} fill="currentColor" className="text-yellow-400 mx-1" />
                         </motion.div>
                       ))}
                     </motion.div>

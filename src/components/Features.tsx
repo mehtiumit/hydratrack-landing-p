@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
-import { Drop, Bell, ChartLine, Target } from '@phosphor-icons/react'
+import { Droplets, Bell, TrendingUp, Target } from 'lucide-react'
 
 const Features = () => {
   const features = [
     {
-      icon: <Drop size={48} weight="duotone" />,
+      icon: <Droplets size={48} />,
       title: 'Track Your Intake',
       description: 'Easily log every glass of water with a simple tap. Visual progress tracking keeps you motivated throughout the day.',
       color: 'from-blue-500 to-blue-600'
     },
     {
-      icon: <Bell size={48} weight="duotone" />,
+      icon: <Bell size={48} />,
       title: 'Smart Reminders',
       description: 'Personalized notifications based on your schedule and activity level. Never forget to hydrate again.',
       color: 'from-purple-500 to-purple-600'
     },
     {
-      icon: <ChartLine size={48} weight="duotone" />,
+      icon: <TrendingUp size={48} />,
       title: 'Hydration History',
       description: 'Comprehensive charts and analytics to track your hydration patterns over time. Identify trends and improve your habits.',
       color: 'from-green-500 to-green-600'
     },
     {
-      icon: <Target size={48} weight="duotone" />,
+      icon: <Target size={48} />,
       title: 'Custom Goals',
       description: 'Set personalized daily water intake goals based on your body weight, activity level, and climate conditions.',
       color: 'from-orange-500 to-orange-600'

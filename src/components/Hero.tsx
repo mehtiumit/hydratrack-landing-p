@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, GooglePlayLogo, AppStoreLogo } from '@phosphor-icons/react'
+import { ArrowRight, Play, Smartphone } from 'lucide-react'
 
 const Hero = () => {
   const scrollToFeatures = () => {
@@ -54,7 +54,7 @@ const Hero = () => {
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4 rounded-xl"
               >
-                <AppStoreLogo size={24} className="mr-2" />
+                <Smartphone size={24} className="mr-2" />
                 App Store
               </Button>
               <Button
@@ -62,7 +62,7 @@ const Hero = () => {
                 variant="outline"
                 className="text-lg px-8 py-4 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
-                <GooglePlayLogo size={24} className="mr-2" />
+                <Play size={24} className="mr-2" />
                 Google Play
               </Button>
             </motion.div>

@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { 
-  AppStoreLogo, 
-  GooglePlayLogo, 
-  TwitterLogo, 
-  InstagramLogo, 
-  FacebookLogo,
-  LinkedinLogo,
-  EnvelopeSimple,
-  Drop
-} from '@phosphor-icons/react'
+  Smartphone, 
+  Play, 
+  Twitter, 
+  Instagram, 
+  Facebook,
+  Linkedin,
+  Mail,
+  Droplets
+} from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -36,10 +36,10 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: <TwitterLogo size={24} />, href: '#', label: 'Twitter' },
-    { icon: <InstagramLogo size={24} />, href: '#', label: 'Instagram' },
-    { icon: <FacebookLogo size={24} />, href: '#', label: 'Facebook' },
-    { icon: <LinkedinLogo size={24} />, href: '#', label: 'LinkedIn' }
+    { icon: <Twitter size={24} />, href: '#', label: 'Twitter' },
+    { icon: <Instagram size={24} />, href: '#', label: 'Instagram' },
+    { icon: <Facebook size={24} />, href: '#', label: 'Facebook' },
+    { icon: <Linkedin size={24} />, href: '#', label: 'LinkedIn' }
   ]
 
   const scrollToSection = (sectionId: string) => {
@@ -68,7 +68,7 @@ const Footer = () => {
                 transition={{ duration: 0.3 }}
                 className="w-10 h-10 bg-white rounded-xl flex items-center justify-center"
               >
-                <Drop size={24} className="text-primary" weight="duotone" />
+                <Droplets size={24} className="text-primary" />
               </motion.div>
               <span className="text-2xl font-bold">HydraTrack</span>
             </div>
@@ -84,7 +84,7 @@ const Footer = () => {
                   variant="secondary"
                   className="w-full justify-start bg-white/90 hover:bg-white text-primary border-0"
                 >
-                  <AppStoreLogo size={24} className="mr-3" />
+                  <Smartphone size={24} className="mr-3" />
                   <div className="text-left">
                     <div className="text-xs opacity-80">Download on the</div>
                     <div className="font-semibold">App Store</div>
@@ -97,7 +97,7 @@ const Footer = () => {
                   variant="secondary"
                   className="w-full justify-start bg-white/90 hover:bg-white text-primary border-0"
                 >
-                  <GooglePlayLogo size={24} className="mr-3" />
+                  <Play size={24} className="mr-3" />
                   <div className="text-left">
                     <div className="text-xs opacity-80">Get it on</div>
                     <div className="font-semibold">Google Play</div>
@@ -149,7 +149,7 @@ const Footer = () => {
             
             <div className="flex flex-col sm:flex-row gap-3">
               <div className="flex-1 relative">
-                <EnvelopeSimple 
+                <Mail 
                   size={20} 
                   className="absolute left-3 top-1/2 -translate-y-1/2 text-primary/60" 
                 />
@@ -254,7 +254,7 @@ const Footer = () => {
                 size="lg"
                 className="bg-white hover:bg-white/90 text-primary text-lg px-8 py-4 rounded-xl font-semibold shadow-lg"
               >
-                <AppStoreLogo size={28} className="mr-3" />
+                <Smartphone size={28} className="mr-3" />
                 Download for iOS
               </Button>
             </motion.div>
@@ -265,7 +265,7 @@ const Footer = () => {
                 variant="outline"
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-xl font-semibold"
               >
-                <GooglePlayLogo size={28} className="mr-3" />
+                <Play size={28} className="mr-3" />
                 Download for Android
               </Button>
             </motion.div>

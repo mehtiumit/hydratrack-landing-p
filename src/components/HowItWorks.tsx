@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion'
-import { NumberCircleOne, NumberCircleTwo, NumberCircleThree } from '@phosphor-icons/react'
+import { Circle } from 'lucide-react'
 
 const HowItWorks = () => {
   const steps = [
     {
-      icon: <NumberCircleOne size={48} weight="duotone" />,
+      icon: <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>,
       title: 'Set Your Daily Goal',
       description: 'Enter your personal details and let HydraTrack calculate your optimal daily water intake based on your body weight, activity level, and environmental factors.',
       image: 'Goal Setting'
     },
     {
-      icon: <NumberCircleTwo size={48} weight="duotone" />,
+      icon: <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>,
       title: 'Get Smart Reminders',
       description: 'Receive personalized notifications throughout the day that adapt to your schedule and drinking patterns. Never miss a hydration moment again.',
       image: 'Smart Notifications'
     },
     {
-      icon: <NumberCircleThree size={48} weight="duotone" />,
+      icon: <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>,
       title: 'Track Your Progress',
       description: 'Log each glass with a simple tap and watch your progress grow. View detailed analytics and celebrate your hydration achievements.',
       image: 'Progress Tracking'

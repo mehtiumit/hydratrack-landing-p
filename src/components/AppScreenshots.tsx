@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { ChevronLeft, ChevronRight } from '@phosphor-icons/react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const AppScreenshots = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
